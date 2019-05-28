@@ -26,7 +26,7 @@ describe "SerpApi Desktop JSON" do
       end
 
       it "has top block position" do
-        expect(@result["block_position"]).to eql("top")
+        expect(@result["block_position"]).to match (/^(top|bottom)$/)
       end
 
       it "has a tracking link" do
