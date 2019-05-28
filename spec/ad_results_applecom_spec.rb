@@ -34,7 +34,7 @@ describe "SerpApi Desktop JSON" do
       end
 
       it "apple.com title" do
-        expect(@result["title"]).to eql("Apple")
+        expect(@result["title"]).to start_with("Apple")
       end
 
       it "apple.com displayed link" do
